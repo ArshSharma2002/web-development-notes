@@ -1,0 +1,263 @@
+*******************************             CSS NOTES            ******************************************
+
+1. INLINE CSS: css is applied directly in tags using style attribute.
+
+2. INTERNAL CSS: css is kept in the same page but seperately in head tags in <style> tag.
+
+3. EXTERNAL CSS: seperate .css file is made and then attached finally in html code.
+
+4. FLEX BOX: 1-D layout method for laying out elements in rows or columns.
+
+
+
+
+
+@ MEDIA QUERY: when our screen will resize then we have to inject a particular css file to change its styling accordingly.
+
+syntax of media query:
+
+@media only screen and (min-width) and (max-width){ styling }
+
+
+
+
+
+UNITS OF PROPERTIES IN CSS:
+
+@ em  :  it is used when we have to display multiple of parent container (e.g. if width of parent is 40px & width of child is 3em than width of child become 120px)
+******************** "em" is used when we have to set any element's value relative to its parent's value ***************************
+
+@ rem :  this unit works according to the relative html font-size.(if in html font-size is given 40px & in element fontsize is 3rem than fontsize of element become 120px)
+******************** "rem" is used when we have to set any element's value relative to root element when we have to give values same throughout the full webpage *************************
+
+@ vh  :  it is viewport. height:(percentage)vh.(if we write 100vh then it gives height equal to full webpage or portion we are able to see.)
+
+@ vw  :  it is viewport. width:(percentage)vw.(if we write 100vw then it gives width equal to full webpage or portion we are able to see.)
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+VARIABLES IN CSS:
+
+*syntax for defining and using a variable:
+
+"   --Variable_Name: value;   " = this will only act as a local variable. for using this we can write = var(--variable_name)
+
+" :root{ --Variable_Name: value;  } " = this will make it work like global variable.
+
+
+PSEUDO SELECTORS IN CSS:
+
+
+@ div > p{   } = applies if p is the direct child of parent (div).
+
+@ div + p{   } = applies if p is the next sibling of div of same parent.
+
+@ input[type='chai']{   } = apply on input tags having attribute (type) with value chai.
+
+@ div:nth-child(sr.no. of child){   } = apply properties on nth child of parent div. (instead of no. we can also write odd and even for applying prop. on respective childs).
+
+@ div::before/after{ content='xyz'} = for adding content before/after a particular tag.
+
+EXAMPLE OF BEFORE/AFTER SELECTOR FOR INSERING IMAGES IN BACK-GROUND:
+
+@ header::before{
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@ .class_name{}
+
+@ #id_name{}
+
+@ body{}             (represents background or empty space in the page)    
+                  
+@ *{}                (universal selector)
+
+@ selector_name:hover{}   (when cursor is on the link or on button)                                      }
+@ selector_name:visited{} (after visiting that link or button how it looks like for that styling)        } <pseudo-selectors>
+@ selector_name:active{}  (when cursor is on the link actively how should it look)                       }                                                      }
+
+
+
+CSS STYLE ATTRIBUTES / PROPERTIES:
+
+
+*opacity:                    (for lowering the visibility/brightness)
+*color:  
+*background-color: 
+*font-size:     
+*font-family:   
+*line-height:   (distance b/w text above and below)
+*font-style:
+*font-weight:  
+*border-color:
+*border-radius:  (curving the corners)
+*border-style:   (type of borders)
+*border-width:   (width of the border in px)
+*border: 2px solid green;
+*border-top/bottom/right/left:     (for a border of particular side)
+*border-bottom-left-radius:        (for curving a particuular edge)
+*background-image: url();           (for displaying image behind text. just enter the url of the picture)
+*backgroud-repeat:                used if image is repeating [use no-repeat] (for giving input how much u want to repeat image) repeat-x/y for repeating image in particular axis.
+*background-postion:               (for fixing the position of background-image)
+*margin:top right bottom left
+*padding:top right bottom left
+*box-sizing: border-box;            (so that width adjust itself if we change padding and margin. this sets the given width and don't include margin and padding.)
+*margin:auto;                       (to get the object in center)
+*float:right/left;                  (to float the texts in any direction)
+*overflow:auto;                     (used when we float an element and it overflows from its parent)
+*clear:left/right/both;             (if float is creating any problem or overlapping use clear)
+*text-align:left/right/center/justify;    (to align the text at different position)
+*text-decoration: none;                   (to remove all decoration of a text e.g. underline.)
+
+*display:inline;                    (the element will ocuupy only given space and we cannot change  its width.)
+*display:block;                     (the element will occupy the full block and we can change its width and by giving margin:auto; we can center that element.)
+*but if we want to make the element inline and also want to set its width then we can use ("display:inline-block;")
+
+
+*position: absolute;      /*positions the element relative to the position of its parent */           
+*position: relative;      /* positions the element relative its real/normal position */
+*position: sticky;        /* positions the element to stick on the web page from top.it is useful when we have to make a navbar or menu which will always stick or shown in the web page on scrolling. */
+*position: fixed;         /* it fixes the position of the element related to browser window. */
+*visibility:none;         (hide the element but element will occupy/show its space no other element can cover his space)
+*display:none;            (hide the element along with its space. element will totally leave the space and disappears)
+* z-index;                (wotk on only positioned elements/relative/sticky/absolute/fixed. helps in stacking
+                            jiska z-index jada hoga woh element upar aayega. if they are overlapping)
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+here, blur-radius is for bluring the shadow , spread-radius is for spreading border/text-shadow. enter values as "+ve" no will give shadow downwards but "-ve" no. will give shadow upward.
+
+* box-shadow: offset-x offset-y blur-radius spread-radius color, another color; 
+* text-shadow: offset-x offset-y blur-radius spread-radius color, another color; 
+
+
+if we want to give these shadows inside the boxes/elements then we can use keyword "inset".
+
+
+* box-shadow:'inset' offset-x offset-y blur-radius spread-radius color, another color; 
+
+
+
+*display:flex;               (initialize container as aflex box)
+*flex-direction:row/column/row,column-reverse;       (for adjusting flex boxes row/column wise)
+*flex-wrap:wrap/wrap-reverse;                        (for adjusting/wraping the elements or for responsiveness of website)
+
+*flex-flow: row/column/row,column-reverse  wrap/wrap-reverse;  (short hand for flex-direction and flex-wrap)
+
+
+@ PROPERTIES FOR FLEX CONTAINERS:
+
+
+///////////////////////////////               justify-content is for horizontal direction  (applies for all elements in container)           /////////////////////////////////////////////////////
+
+
+*justify-content:center;                    (to align the element(flex boxes)in center *horizontaly*)
+*justify-content:space-between;             (to give equal spaces between the flex boxes(elements) *horizontaly* )
+*justify-content:space-evenly;              (to give equal spaces between flex boxes including from left and right end *horizontaly*)
+*justify-content:space-around;              (to give equal space around all flex boxes individualy on its right/left *horizontaly*)
+
+///////////////////////////////               align-items is for vertical direction  (applies for all elements in container)                /////////////////////////////////////////////////////
+
+
+*align-items:center;                        (centers the elements/flex boxes *verticaly*)
+*align-items:flex-end;                      (elements ko end mei le aayega *verticaly*)
+*align-items:flex-start;                    (elements ko top /start pe le aayega *verticaly*)
+*align-items:stretch;                       (to give spaces betweeen elements/flex boxes *verticaly* (wrap must be there) )
+
+
+@ PROPERTIES FOR FLEX BOXES/ELEMENTS:
+
+
+*order:(+ve no.);                      (higher the order,later it shows up the that element in the container)
+*flex-grow:(+ve no.);                  (higher the property(no.), it increase its size as compare to another elements,accordingly when we check its responsiveness)
+*flex-shrink:(+veno.);                 (higher the property(no.), it decrease/shrinks its size as compare to another elements,accordingly when we check its responsiveness)
+*flex-basis:(in px);                   (it sets the width and height of elements on the basis of flex-direction property(for "row" it is width & for"column" it is height))
+*flex:(grow shrink basis);                 (a short hand for flex-grow/shrink/basis together)
+
+
+
+*align-self:center;                    (the particular element goes to the center of the flex container)
+
+*align-self:flex-end;                  (the particular element goes to the end of the flex container)
+
+*align-self:flex-start;                (the particular element goes to the start of the flex container)
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                              ANIMATIONS AND TRANSITIONS:(position:relative;)
+
+*animation-name:
+*animation-duration:(in sec.)
+*animation-iteration-count:                               (to repeat anim.)
+*animation-fill-mode:forwards/alternate;                  (if we want our anim. get stuck at end/start result )
+*animation-timing-function:ease-in/ease-out/ease-in-out;  (ease-in = slow starting fast ending and ease-out is its vice-versa. ease-in-out = slow ending and starting. )
+*animation-delay;                                         (to give delay in sec.)
+*animation-direction;                                     (direction of the anim.*reverse*alterate* etc.)
+
+SHORT-HAND FOR ANIMATION:
+
+*animation: name duration timing-function delay iteration-count fill-mode;
+
+
+
+
+
+@keyframes anim_name {from{prop.}   to{prop.} }           (for applying animation on properties)
+
+@keyframes anim_name {0%{} 25%{} 50%{} 75%{} 100%{} }     (another way through percentage for applying prop.)
+
+
+
+
+*transition-property: name_of_prop. ;                     (for e.g. color,background-color etc.)
+*transition-timing-function:                              (ease-in = slow starting fast ending and ease-out is its vice-versa. ease-in-out = slow ending and starting. )
+*transition-delay:                                        (to give delay in sec.)
+*transition-duration:(in sec.)
+
+SHORT-HAND FOR TRANSITION:
+
+*transition: prop. duration timing-func. delay ;          (we can also apply it using hover{})
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+SYNTAX IN CSS:
+
+                               p{ type_of_property : value_specific_property;}
+
+
+@ here p is selector.
+@ type_of_property = background-color.
+@ specific property = red.
+
+@ inline css is preffered more over internal css and external css.
+
+@ HTML gives preference to that css which is written in last as compare to which is written before.
+
+
+FONTS IN CSS:
+
+
+@ font-family:  gives the list of different fonts priority wise.
+@ font-size: use to give size of font in pixels. (pixel is 1/96 th of an inch.)

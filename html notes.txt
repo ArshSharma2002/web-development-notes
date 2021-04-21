@@ -1,0 +1,87 @@
+*********************                                     html                                 ***********************
+
+
+
+
+
+!doctype  (tells that doctype is html)
+html    (starts)                                   #html code starts from here)
+head    (starts)
+  meta tags                                        #use to web trafficing / ranks our website)
+  tittle                                           #tittle of the website)
+  external sheets                                  #linking css java etc)
+head    (ends)
+body    (starts)
+.    
+.     <h1>..........<h1>                           #for heading)
+.
+.     <p>...........<p>                            #for paragraph)
+))
+.
+.
+body (ends)
+html (ends)
+
+
+
+
+@ block elements : the elements which occupies the full line space . (eg: <p>,<li>)
+
+@ inline elements : the elements which occupies only the space upto its length . (eg: <strong>,<em>)
+
+@ id's are not repeated. every tag has a different id but can have various classes. multiple tags can have simmilar class.
+
+@ id represent's the name.
+
+@ Entities = some characters are reserved in HTML so, we use entities to print that characters. eg: <,> .
+
+               @  &lt; = <
+               @  &gt; = >
+               @ &nbsp; = non breakable space.(use to give space in output because HTML by default chop's all the spaces.)
+
+@ semanctic tags = html provide some tags which are used to define the particular part of a website. eg:<header>,<nav> etc.
+
+
+
+HTML contains two (2) main parts:
+     
+   * tags
+
+   * attributes
+
+   *attributes modify tags
+
+*********************  DIFFERENT TAGS   *********************
+
+
+
+
+<strong> = to bold the text or <b> = bold
+
+<em> = to make a text look different from another text.  (emphasized)  or  <i> = italic
+
+<hr> = horizontal rule (for making a horizontal rule line)   # it is a self closing tag. no need to close this tag.
+
+<br> = for break the line (break line)       # it is a self closing tag. no need to close this tag.
+
+<a href="https://www.google.com" target="_blank >google</a> = anchor tag   (#target="_blank" attribute for opening link in new tab)
+
+<img src="" alt=""> = for inserting images (img tag)    #src for source link and alt for alternate text.
+
+<button> = for creating buttons.
+
+<input type="text" name="search" id="search" placeholder="search elements"> = (input tag for creating input/search bar.
+                                                    here placeholder represents text:jo piche light krke dikhayi deta hai)
+<marquee> = for moving text.
+
+@ <meta charset="UTF-8">  = meta is a *tag and charset is an *attribute
+
+@ comments : <!-- abcdefgh -->     shortcut to make a sting comment: (ctrl + /)
+
+@ there should be only one <h1> tag only for heading not for bolding the text. 
+
+@ the font size will be decrease in order 1>2>3>4.....
+
+@ lorem(no. of random words u want to enter)  =  generates N no. of random words {given by emmet}
+
+@ toggle word wrap to get the text not to go outside the screen
