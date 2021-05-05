@@ -9,6 +9,30 @@
 4. FLEX BOX: 1-D layout method for laying out elements in rows or columns.
 
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+SYNTAX IN CSS:
+
+                               p{ type_of_property : value_specific_property;}
+
+
+@ here p is selector.
+@ type_of_property = background-color.
+@ specific property = red.
+
+@ inline css is preffered more over internal css and external css.
+
+@ HTML gives preference to that css which is written in last as compare to which is written before.
+
+
+FONTS IN CSS:
+
+
+@ font-family:  gives the list of different fonts priority wise.
+@ font-size: use to give size of font in pixels. (pixel is 1/96 th of an inch.)
+
+
 
 
 
@@ -43,7 +67,7 @@ UNITS OF PROPERTIES IN CSS:
 @ vw  :  it is viewport. width:(percentage)vw.(if we write 100vw then it gives width equal to full webpage or portion we are able to see.)
 
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 VARIABLES IN CSS:
@@ -83,7 +107,7 @@ EXAMPLE OF BEFORE/AFTER SELECTOR FOR INSERING IMAGES IN BACK-GROUND:
         }
 
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @ .class_name{}
 
@@ -145,7 +169,7 @@ CSS STYLE ATTRIBUTES / PROPERTIES:
                             jiska z-index jada hoga woh element upar aayega. if they are overlapping)
 
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 here, blur-radius is for bluring the shadow , spread-radius is for spreading border/text-shadow. enter values as "+ve" no will give shadow downwards but "-ve" no. will give shadow upward.
 
@@ -170,7 +194,7 @@ if we want to give these shadows inside the boxes/elements then we can use keywo
 @ PROPERTIES FOR FLEX CONTAINERS:
 
 
-///////////////////////////////               justify-content is for horizontal direction  (applies for all elements in container)           /////////////////////////////////////////////////////
+///////////////////////////////      justify-content is for horizontal direction  (applies for all elements in container)   ///////////////////////////////////////////////
 
 
 *justify-content:center;                    (to align the element(flex boxes)in center *horizontaly*)
@@ -178,7 +202,7 @@ if we want to give these shadows inside the boxes/elements then we can use keywo
 *justify-content:space-evenly;              (to give equal spaces between flex boxes including from left and right end *horizontaly*)
 *justify-content:space-around;              (to give equal space around all flex boxes individualy on its right/left *horizontaly*)
 
-///////////////////////////////               align-items is for vertical direction  (applies for all elements in container)                /////////////////////////////////////////////////////
+///////////////////////////////   align-items is for vertical direction  (applies for all elements in container)    /////////////////////////////////////////////////////
 
 
 *align-items:center;                        (centers the elements/flex boxes *verticaly*)
@@ -292,22 +316,3 @@ shorthand for grid-column/row-start/end:
 
 
 
-SYNTAX IN CSS:
-
-                               p{ type_of_property : value_specific_property;}
-
-
-@ here p is selector.
-@ type_of_property = background-color.
-@ specific property = red.
-
-@ inline css is preffered more over internal css and external css.
-
-@ HTML gives preference to that css which is written in last as compare to which is written before.
-
-
-FONTS IN CSS:
-
-
-@ font-family:  gives the list of different fonts priority wise.
-@ font-size: use to give size of font in pixels. (pixel is 1/96 th of an inch.)
