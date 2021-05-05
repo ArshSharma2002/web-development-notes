@@ -18,6 +18,14 @@ syntax of media query:
 
 @media only screen and (min-width) and (max-width){ styling }
 
+e.g.
+
+@media (min-width: 400px){
+            #box1{
+                display: block;
+            }
+        }
+
 
 
 
@@ -238,9 +246,51 @@ SHORT-HAND FOR TRANSITION:
 
 
 
+*************************************************          TRANSFORM             ******************************************************
+
+transition: all 0.5s ease-in-out;
+        
+        .box:hover{
+            transform: rotate(360deg);                  (for rotating any element)
+            transform: skew(40deg);                     (for making it a parallelogram with given angle)
+            transform: scale(2);                        (for increasing its size "2" times,here.)
+            transform: translateX(123px);               (for moving any element at x-axis 123px,here.) 
+            transform: translateY(123px);               (for moving any element at y-axis 123px,here.)
+            transform: translate(123px, 123px);         (for moving any element at x/y-axis 123px,here.)
+
+
+
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+CSS GRID: Layout property for css . we can also use properties of flex boxes on grids .
+
+*display:grid;
+*grid-template-columns: 100px 50px 200px;                (can also use auto instead of giving in px and also we can use fr unit e.g. 3fr 2fr 2fr this will divide screen into given ratio . )
+*grid-template-columns: repeat(10, auto);                ( for repeating same property 10 times)
+*grid-template-rows: 3px 4px;                            (same as gtc but for rows)
+*grid-auto-rows/columns: 250px;                          (give width/height of 250 px to those grid items whose width/height is not given)
+*grid-column/row-gap: 20px/2rem;                         (for giving gaps or spacing between adjacent grid items)
+
+*grid-column/row-start: 2;              }  <--           (for making grid items a cell, makes row/column 2 and 3 single item)
+*grid-column/row-end: 4;                }
+
+shorthand for grid-column/row-start/end:
+
+*grid-column/row: 1 / span 3;                            (this will make grid item no. 1,2and3 single cell/item)
+
+*grid-template-columns/rows: repeat(auto-fit,minmax(50px,100px));             (this will help to make grid responsive)
+
+*grid-template-areas: 'navbar navbar navbar'             (for creating layout)
+                      'section section aside';
+*grid-area: navbar/section/aside;                        (also initialize these values in respective navbar/section/aside)
+
+*scroll-behavior: smooth;                                (for scrolling smoothly)
+
+
+
+
 
 SYNTAX IN CSS:
 
